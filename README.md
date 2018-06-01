@@ -126,22 +126,27 @@ These includes:
 
 # Using SASS
 
-In order to use SASS for development, you just need to compile it into the CSS that Theming Center understands.
-Note: Zendesk App Tools [theme preview](#publishing-your-theme) currently does not support live SASS compilation.
+I recomend you to use `node-sass` to compile the SASS files executing the following command in the root folder of the proect:
 
-## Requirements
-
-- Install Ruby, we use `sassc` gem to compile our `.scss` files. You can see how to install Ruby [here](https://www.ruby-lang.org/en/documentation/installation/).
-- Install `sassc` gem. You can run:
 ```
-    gem install sassc
+node-sass --output-style nested ./styles/index.scss ./style.css
 ```
 
-Now you can compile your SASS files running:
+Yo can also use `nodemon` to launch a monitr that compiles the styles atomatically when some `sass` file changes:
+
 ```
-./bin/compile.rb
+nodemon --watch ./styles -e css,scss -x "node-sass --output-style nested ./styles/index.scss ./style.css"
 ```
-Which will take all the `scss` files inside the `styles/` folder and create the `style.css` file that is consumable by Theming Center.
+
+# Inject local CSSs in production server for developent
+
+As is a tiring proces to copy paste your develompemtn CSS into the production server to see how they fit, you can replace them starting a local server this way:
+
+```
+$('link[rel="stylesheet"][href*="style.css"]').first().attr('href','http://127.0.0.1:8888/style.css')
+```
+
+This is very handi in conjuction with some Chrome extension as `Reload CSS` ;)
 
 # Contributing
 

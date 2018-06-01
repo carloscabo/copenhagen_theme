@@ -1,12 +1,18 @@
 /***** Header *****/
-$header-height: 71px;
+$header-height: 128px;
 
-.header {
+header.header {
+  background-color: $header-background_color;
+}
+
+.header-wrapper {
   @include max-width-container;
-  position: relative;
-  align-items: center;
   display: flex;
-  height: $header-height;
+  width: 100%; height: $header-height;
+  position: relative;
+  padding: 0 5%;
+
+  align-items: center;
   justify-content: space-between;
 }
 
