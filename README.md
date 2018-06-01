@@ -1,15 +1,15 @@
-# Copenhagen Theme by Zendesk
+# Villabona-Tabladiello Theme by Carlos Cabo based on Copenhagen Theme by Zendesk
 
-The Copenhagen theme is a responsive theme for Zendesk Guide. It is designed to be used together with [Theming Center](https://support.zendesk.com/hc/en-us/community/topics/115000528387-Zendesk-Guide-beta-Theming-Center)
+You can read the original documentation fot Copenhagen theme at its repository <https://github.com/zendesk/copenhagen_theme>
 
-You can see the theme live [here](https://copenhagentheme.zendesk.com/hc/en-us).
-
-The Copenhagen theme for Help Center consists of a [set of templates](#templates), [styles](#styles), a Javascript file used mainly for interactions and an [assets folder](#assets).
+Here you'll find mdifications ans 
 
 ## How to use
+
 This is the latest version of the Copenhagen theme available for Guide. It is possible to use this repository as a starting point to build your own custom theme. You can fork this repository as you see fit.
 
 ## Customizing your theme
+
 Once you have forked this repository you can feel free to edit templates, CSS in `style.css` (if you would like to use SASS go to the [Using SASS section](#using-sass)), javascript and manage assets.
 
 ### Manifest file
@@ -17,8 +17,8 @@ The manifest allows you to define a group of settings for your theme that can th
 For example, if you update the manifest file to look like this and you then import your theme to Theming Center:
 ```js
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
+  "name": "Villabona-Tabladiello",
+  "author": "Carlos Cabo",
   "version": "1.0.1",
   "api_version": 1,
   "settings": [{
@@ -125,6 +125,7 @@ These includes:
 * Dropdown arrow
 
 # Using SASS
+
 In order to use SASS for development, you just need to compile it into the CSS that Theming Center understands.
 Note: Zendesk App Tools [theme preview](#publishing-your-theme) currently does not support live SASS compilation.
 
@@ -143,5 +144,6 @@ Now you can compile your SASS files running:
 Which will take all the `scss` files inside the `styles/` folder and create the `style.css` file that is consumable by Theming Center.
 
 # Contributing
+
 Bug reports and pull requests are welcome on GitHub at https://github.com/zendesk/copenhagen_theme
 Please mention @zendesk/delta when creating a bug report or a pull request.
