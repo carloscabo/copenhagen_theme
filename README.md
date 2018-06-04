@@ -140,13 +140,18 @@ nodemon --watch ./styles -e css,scss -x "node-sass --output-style nested ./style
 
 # Inject local CSSs in production server for developent
 
-As is a tiring proces to copy paste your develompemtn CSS into the production server to see how they fit, you can replace them starting a local server this way:
+To copy paste your CSS in the Zendesk server is a tiring process, you can use a trick for a faster development.
 
+1. Start a local server
+```
+php -S 127.0.0.1:8888
+```
+
+2. Replace the `style.css` path in the `href` attribute to point to your local server
 ```
 $('link[rel="stylesheet"][href*="style.css"]').first().attr('href','http://127.0.0.1:8888/style.css')
 ```
-
-This is very handi in conjuction with some Chrome extension as `Reload CSS` ;)
+3. Use some hnady Chrome extension as `Reload CSS` to reload the CSSs as you make changes ;)
 
 # Contributing
 
