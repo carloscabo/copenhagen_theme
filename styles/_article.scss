@@ -43,6 +43,8 @@
   }
 
   &-title {
+    font-weight: 700;
+
     @include tablet {
       flex-basis: 100%; /* Take entire row */
     }
@@ -68,8 +70,9 @@
 
   &-meta {
     display: inline-block;
-    margin-left: 10px;
     vertical-align: middle;
+    margin-left: 10px;
+    font-weight: 700;
   }
 
   &-body {
@@ -229,8 +232,9 @@
   }
 
   &-unsubscribe {
-    background-color: $button-color;
-    color: $brand_text_color;
+    border-color: $button-color !important;
+    background-color: #fff !important;
+    color: $button-color !important;
     text-decoration: none;
 
     &:hover {
@@ -247,18 +251,25 @@
   }
 
   &-item {
-    border-radius: 4px;
-    color: $text_color;
     display: block;
-    font-weight: $font-weight-light;
+    border-radius: 4px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 0;
+
+    font-weight: $font-weight-light;
+    line-height: 1.2em;
+    color: $text_color;
 
     &.current-article,
     &:hover {
+      color: $brand_color;
+      text-decoration: dotted;
+      padding: 0;
+      /*
       background-color: $brand_color;
       color: $brand_text_color;
       text-decoration: none;
+      */
     }
   }
 }
@@ -272,5 +283,17 @@
 
   li {
     margin-bottom: 15px;
+  }
+}
+
+.section-articles {
+  ul {
+    li {
+      & + li {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #ddd;
+      }
+    }
   }
 }

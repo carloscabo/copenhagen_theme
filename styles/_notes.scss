@@ -1,0 +1,19 @@
+.note,
+.info {
+  background: #FCEFC0;
+  padding: 16px 24px;
+  margin: 24px 0 32px 0;
+  border-radius: 4px;
+
+  p {
+    margin: 0;
+
+    & + p {
+      margin-top: 1em;
+    }
+  }
+}
+
+.info {
+  background-color: #DDEBFB;
+}

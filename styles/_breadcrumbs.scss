@@ -10,8 +10,8 @@
   li {
     color: $secondary-text-color;
     display: inline;
-    font-weight: $font-weight-light;
-    font-size: $font-size-small;
+    font-weight: 700; // $font-weight-light;
+    font-size: $font-size-base; // $font-size-small;
     max-width: 450px;
     overflow: hidden;
     text-overflow: ellipsis;

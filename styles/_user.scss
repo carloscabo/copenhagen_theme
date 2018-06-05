@@ -35,18 +35,20 @@
 #user #user-name {
   @include tablet { display: inline-block; }
   display: none;
+
   font-size: 14px;
+  font-weight: 700;
 
   &:hover { text-decoration: underline; }
 }
 
 /***** User avatar *****/
 .user-avatar {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
   display: inline-block;
+  width: 25px; height: 25px;
+  margin-right: 6px;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 .avatar {

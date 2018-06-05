@@ -25,14 +25,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 22px; }
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
 h3 {
-  font-size: 18px;
-  font-weight: $font-weight-semibold;
+  font-size: 24px;
+  font-weight: 700; //font-weight: $font-weight-semibold;
 }
 
-h4 { font-size: 16px; }
+h4 { font-size: 20px; }
 
 a {
   color: $link_color;
@@ -122,4 +128,24 @@ ul {
 
 .dropdown-toggle::after {
   color: inherit;
+}
+
+code, kbd, pre {
+  white-space: pre;
+  border: 1px solid #ddd;
+  font-size: 0.85em;
+  padding: 2px 6px;
+  background: #f3f3f3;
+  border-radius: 4px;
+}
+
+figcaption {
+  p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+
+    padding-left: 24px;
+    border-left: 3px solid #979797;
+  }
 }
