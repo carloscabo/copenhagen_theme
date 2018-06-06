@@ -498,14 +498,16 @@ header.header {
   position: relative; }
   .search input[type="search"] {
     border: 1px solid #ddd;
-    border-radius: 30px;
+    border-radius: 4px;
     box-sizing: border-box;
     color: #999;
     height: 40px;
     padding-left: 40px;
     padding-right: 20px;
     -webkit-appearance: none;
-    width: 100%; }
+    width: 100%;
+    background-color: #F6F6F6;
+    font-size: 18px; }
     [dir="rtl"] .search input[type="search"] {
       padding-right: 40px;
       padding-left: 20px; }
@@ -516,7 +518,6 @@ header.header {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #fff;
     color: #ddd;
     content: "\1F50D";
     font-size: 18px;
@@ -823,8 +824,9 @@ header.header {
     color: #333; }
 
 .icon-star::before {
-  color: #4A90E2;
-  font-size: 18px; }
+  color: #B99A2E;
+  font-size: 28px;
+  margin-left: -33px; }
 
 /***** Section pages *****/
 .section-container {
@@ -2830,3 +2832,11 @@ header.header {
 
 .info {
   background-color: #DDEBFB; }
+
+.figcaption {
+  padding: 0 0 0 24px;
+  border-left: 3px solid #979797; }
+  .figcaption p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333; }
