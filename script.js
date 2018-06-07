@@ -4,6 +4,29 @@
 
 $(document).ready(function() {
 
+  $article_imgs =  $('.article-body img');
+  if ( $article_imgs.length ) {
+
+    $article_imgs.each(function(idx,img){
+      var
+        $img = $(img),
+        w = $img.width(),
+        nw = $img.prop('naturalWidth');
+      if ( w < nw ) {
+        $img.wrap('<a data-fancybox="gallery" href="'+$img.attr('src')+'"></a>');
+      }
+    });
+
+    $.getScript( "//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js" )
+    .done(function( script, textStatus ) {
+      console.log( "Added FancyBox 3." );
+    })
+    .fail(function( jqxhr, settings, exception ) {
+      console.log( "Error adding FancyBox 3." );
+    });
+  }
+
+
   // social share popups
   $(".share a").click(function(e) {
     e.preventDefault();
