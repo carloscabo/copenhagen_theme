@@ -39,6 +39,9 @@
   .see-all-articles {
     display: block;
     padding: 15px 0;
+
+    font-family: $heading_font;
+    font-weight: 600;
   }
 }
 
@@ -53,7 +56,7 @@
 }
 
 .icon-star::before {
-  color: #B99A2E;// $brand_color;
+  color: #ded563;// $brand_color;
   font-size: 28px;
   margin-left: -33px;
 }
