@@ -1,0 +1,45 @@
+.article-body {
+  img {
+    border: 1px solid #ccc;
+  }
+}
+
+a[data-fancybox] {
+  display: block;
+  background-color: $brand_color;
+  position: relative;
+
+  &:before {
+    content: '\1F50D';
+    display: block;
+    width: 48px; height: 48px;
+
+    position: absolute;
+    top: 24px; left: 24px;
+    z-index: 3;
+
+    font-size: 28px; line-height: 48px;
+    text-align: center;
+    color: #ddd;
+
+    background-color: #000;
+    border-radius: 4px;
+
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+    img {
+      opacity: 0.8;
+    }
+  }
+
+  img {
+    display: block;
+    transition: opacity 0.25s ease-in-out;
+  }
+}

@@ -2841,3 +2841,35 @@ header.header {
     font-size: 16px;
     line-height: 24px;
     color: #333333; }
+
+.article-body img {
+  border: 1px solid #ccc; }
+
+a[data-fancybox] {
+  display: block;
+  background-color: #4A90E2;
+  position: relative; }
+  a[data-fancybox]:before {
+    content: '\1F50D';
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 3;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+    color: #ddd;
+    background-color: #000;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out; }
+  a[data-fancybox]:hover:before {
+    opacity: 1; }
+  a[data-fancybox]:hover img {
+    opacity: 0.8; }
+  a[data-fancybox] img {
+    display: block;
+    transition: opacity 0.25s ease-in-out; }
