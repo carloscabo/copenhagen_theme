@@ -8,13 +8,17 @@
   padding: 0;
 
   li {
-    color: $secondary-text-color;
     display: inline;
-    font-weight: 700; // $font-weight-light;
-    font-size: $font-size-base; // $font-size-small;
     max-width: 450px;
-    overflow: hidden;
+
+    font-family: $heading_font;
+    font-weight: 600; // $font-weight-light;
+    font-size: $font-size-base; // $font-size-small;
+    color: $secondary-text-color;
     text-overflow: ellipsis;
+
+
+    overflow: hidden;
 
     + li::before {
       content: ">";

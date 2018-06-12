@@ -43,7 +43,7 @@
   }
 
   &-title {
-    font-weight: 700;
+    font-weight: 300;
 
     @include tablet {
       flex-basis: 100%; /* Take entire row */
@@ -111,6 +111,7 @@
   }
 
   &-sidebar {
+    margin-top: 8px;
     @include desktop {
       border: 0;
       flex: 0 0 17%;
@@ -289,10 +290,10 @@
 .section-articles {
   ul {
     li {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
       & + li {
-        margin-top: 16px;
-        padding-top: 16px;
-        border-top: 1px solid #ddd;
       }
     }
   }
