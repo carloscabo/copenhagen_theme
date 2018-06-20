@@ -299,3 +299,19 @@
     }
   }
 }
+
+.article-attachments {
+  margin: 32px 0 -8px 0;
+  padding: 8px 24px 20px 24px;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #F6F6F6;
+
+  .attachment-title {
+    display: block;
+    margin: 0.5em 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

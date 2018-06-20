@@ -1,10 +1,18 @@
 /***** Attachments *****/
 /* Styles attachments inside posts, articles and comments */
 .attachments {
+
+
   .attachment-item {
+
     padding-left: 20px;
     position: relative;
     margin-bottom: 10px;
+    font-weight: 700;
+
+    a.attachment-meta-item.meta-data {
+      text-decoration: underline;
+    }
 
     &:last-child { margin-bottom: 0; }
 
