@@ -2848,6 +2848,10 @@ header.header {
     .note p + p,
     .info p + p {
       margin-top: 1em; }
+  .note a,
+  .info a {
+    color: #0A4E6E;
+    text-decoration: underline; }
 
 .info {
   background-color: #DDEBFB; }
