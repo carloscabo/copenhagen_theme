@@ -60,8 +60,9 @@
         <div class="article-content">
           <div class="article-body">{{article.body}}</div>
 
+          {{#if attachments.length}}
           <div class="article-attachments" id="article-attachments">
-            <p class="attachment-title">Archivos descargables</p>
+            <p class="attachment-title">Archivos descargables ({{attachments.length}})</p>
             <ul class="attachments">
               {{#each attachments}}
                 <li class="attachment-item">
@@ -74,6 +75,8 @@
               {{/each}}
             </ul>
           </div>
+          {{/if}}
+
         </div>
       </section>
 
