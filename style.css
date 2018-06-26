@@ -2864,6 +2864,20 @@ header.header {
     line-height: 24px;
     color: #333333; }
 
+.noteblue {
+  background: #ddf5fb;
+  border-radius: 4px;
+  color: #278aa0;
+  text-align: left;
+  padding: 16px 16px 16px 44px; }
+
+.noteyellow {
+  background: #fdfacf;
+  border-radius: 4px;
+  color: #aea207;
+  text-align: left;
+  padding: 16px 16px 16px 44px; }
+
 .article-body img {
   border: 1px solid #ccc; }
 
@@ -2895,3 +2909,7 @@ a[data-fancybox] {
   a[data-fancybox] img {
     display: block;
     transition: opacity 0.25s ease-in-out; }
+
+/* IMPORTANTE: Si añades nuevos estilos aquí avisa a carloscabo porque estos estilos se compilan usando SASS y si no se incluyen en el sitio correcto se perderán ;)
+El
+*/
