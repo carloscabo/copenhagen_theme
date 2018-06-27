@@ -1,13 +1,25 @@
 .article-body {
   img {
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+  }
+  img.no-border {
+    border: 0;
+  }
+  img.no-round {
+    border-radius: 0;
+  }
+  img.no-shadow {
+    border-radius: 0;
   }
 }
 
 a[data-fancybox] {
   display: block;
-  background-color: $brand_color;
   position: relative;
+  border-radius: 4px;
+  background-color: #fff;
 
   &:before {
     content: '\1F50D';
@@ -30,6 +42,7 @@ a[data-fancybox] {
   }
 
   &:hover {
+    background-color: $brand_color;
     &:before {
       opacity: 1;
     }

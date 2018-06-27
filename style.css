@@ -2879,12 +2879,24 @@ header.header {
   padding: 16px 16px 16px 44px; }
 
 .article-body img {
-  border: 1px solid #ccc; }
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
+
+.article-body img.no-border {
+  border: 0; }
+
+.article-body img.no-round {
+  border-radius: 0; }
+
+.article-body img.no-shadow {
+  border-radius: 0; }
 
 a[data-fancybox] {
   display: block;
-  background-color: #4A90E2;
-  position: relative; }
+  position: relative;
+  border-radius: 4px;
+  background-color: #fff; }
   a[data-fancybox]:before {
     content: '\1F50D';
     display: block;
@@ -2902,14 +2914,14 @@ a[data-fancybox] {
     border-radius: 4px;
     opacity: 0;
     transition: opacity 0.25s ease-in-out; }
-  a[data-fancybox]:hover:before {
-    opacity: 1; }
-  a[data-fancybox]:hover img {
-    opacity: 0.8; }
+  a[data-fancybox]:hover {
+    background-color: #4A90E2; }
+    a[data-fancybox]:hover:before {
+      opacity: 1; }
+    a[data-fancybox]:hover img {
+      opacity: 0.8; }
   a[data-fancybox] img {
     display: block;
     transition: opacity 0.25s ease-in-out; }
 
-/* IMPORTANTE: Si añades nuevos estilos aquí avisa a carloscabo porque estos estilos se compilan usando SASS y si no se incluyen en el sitio correcto se perderán ;)
-El
-*/
+/* IMPORTANTE: Si añades nuevos estilos aquí avisa a carloscabo porque estos estilos se compilan usando SASS y si no se incluyen en el sitio correcto se perderán ;) */
