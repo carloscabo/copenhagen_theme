@@ -214,6 +214,7 @@
   &-table {
     td:last-child {
       @include tablet { display: table-cell; }
+      text-align: right;
       display: block;
     }
 

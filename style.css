@@ -790,7 +790,7 @@ header.header {
   flex: 1; }
   @media (min-width: 1024px) {
     .category-content {
-      flex: 0 0 80%; } }
+      flex: 1 0 80%; } }
 
 .section-tree {
   display: flex;
@@ -839,7 +839,7 @@ header.header {
   flex: 1; }
   @media (min-width: 1024px) {
     .section-content {
-      flex: 0 0 80%; } }
+      flex: 1 0 80%; } }
 
 .section-subscribe .dropdown-toggle::after {
   display: none; }
@@ -854,10 +854,10 @@ header.header {
   flex: 1 0 auto; }
   @media (min-width: 1024px) {
     .article {
-      flex: 1 0 66%;
-      max-width: 66%;
+      flex: 1 0 75%;
+      max-width: 75%;
       min-width: 640px;
-      padding: 0 30px; } }
+      padding: 0 52px 0 0; } }
   .article-container {
     display: flex;
     flex-direction: column; }
@@ -972,7 +972,7 @@ header.header {
     @media (min-width: 1024px) {
       .article-sidebar {
         border: 0;
-        flex: 0 0 17%;
+        flex: 0 0 25%;
         height: auto; } }
   .article-relatives {
     border-top: 1px solid #ddd;
@@ -1056,20 +1056,19 @@ header.header {
 .sidenav-item {
   display: block;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
-  font-weight: 100;
-  line-height: 1.2em;
+  font-size: 14px;
+  line-height: 1.5em;
   color: #333; }
-  .sidenav-item.current-article, .sidenav-item:hover {
+  .sidenav-item.current-article {
     color: #4A90E2;
-    text-decoration: dotted;
-    padding: 0;
-    /*
-      background-color: $brand_color;
-      color: $brand_text_color;
-      text-decoration: none;
-      */ }
+    font-weight: 700;
+    padding: 0; }
+  .sidenav-item:hover {
+    color: #4A90E2;
+    text-decoration: underline !important;
+    padding: 0; }
 
 .recent-articles h3,
 .related-articles h3 {
@@ -1082,9 +1081,8 @@ header.header {
   font-weight: 400; }
 
 .section-articles ul li {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid #ddd; }
+  margin-top: 12px;
+  padding-top: 12px; }
 
 .article-attachments {
   margin: 32px 0 -8px 0;
@@ -2013,6 +2011,7 @@ header.header {
     text-decoration: none; }
 
 .subscriptions-table td:last-child {
+  text-align: right;
   display: block; }
   @media (min-width: 768px) {
     .subscriptions-table td:last-child {
@@ -2838,8 +2837,8 @@ header.header {
 
 .note,
 .info {
-  background: #FCEFC0;
-  padding: 16px 24px;
+  background-color: #FCEFC0;
+  padding: 16px 24px 16px 58px;
   margin: 24px 0 32px 0;
   border-radius: 4px; }
   .note p,
@@ -2853,8 +2852,11 @@ header.header {
     color: #0A4E6E;
     text-decoration: underline; }
 
+.note {
+  background: #FCEFC0 url("$assets-icon-info-svg") 24px 16px no-repeat; }
+
 .info {
-  background-color: #DDEBFB; }
+  background-color: #DDEBFB url("$assets-icon-warning-svg") 24px 20px no-repeat; }
 
 .figcaption {
   padding: 0 0 0 24px;
