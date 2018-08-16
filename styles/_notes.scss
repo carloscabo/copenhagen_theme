@@ -18,11 +18,10 @@
   }
 }
 .note {
-  background: #FCEFC0 url( '$assets-icon-info-svg' ) 24px 16px no-repeat;
-
+  background-color: #DDEBFB url( '$assets-icon-warning-svg' ) 24px 20px no-repeat;
 }
 .info {
-  background-color: #DDEBFB url( '$assets-icon-warning-svg' ) 24px 20px no-repeat;
+  background: #FCEFC0 url( '$assets-icon-info-svg' ) 24px 20px no-repeat;
 }
 
 .figcaption {
@@ -37,17 +36,21 @@
 }
 
 .noteblue {
-  background: #ddf5fb;
+  padding: 16px 16px 16px 64px;
   border-radius: 4px;
-  color: #278aa0;
+  background: #DDEBFB url( '$assets-icon-info-blue-svg' ) 20px 34px no-repeat;
+  background-size: 32px auto;
+
   text-align:left;
-  padding: 16px 16px 16px 44px;
+  color: #278aa0;
 }
 
 .noteyellow {
-  background: #fdfacf;
+  padding: 16px 16px 16px 64px;
   border-radius: 4px;
-  color: #aea207;
+  background: #fdfacf url( '$assets-icon-warning-yellow-svg' ) 20px 34px no-repeat;
+  background-size: 32px auto;
+
   text-align:left;
-  padding: 16px 16px 16px 44px;
+  color: #aea207;
 }
